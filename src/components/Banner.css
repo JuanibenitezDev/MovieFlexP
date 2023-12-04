@@ -1,0 +1,130 @@
+.bannerItem {
+  position: relative;
+}
+
+.bannerImg {
+  object-fit: cover;
+  object-position: left top;
+  min-width: 100%;
+  height: 550px;
+  border-radius: 5px;
+}
+
+.banner::-webkit-scrollbar {
+  display: none;
+}
+
+.bannerContent {
+  margin-left: 30px;
+}
+
+.titulo {
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-15%, -200%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.bannerDescription {
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  transform: translate(-20%, -60%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.bannerButon {
+  background: transparent;
+  position: absolute;
+  top: 60%;
+  left: 13%;
+  transform: translate(-15%, -60%);
+  color: white;
+}
+.slick-slide {
+  position: relative;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+}
+
+.bannerDescription {
+  width: 45rem;
+  line-height: 1.3;
+  font-size: 0.8rem;
+  max-width: 360px;
+  height: 80px;
+}
+.bannerButon {
+  cursor: pointer;
+  color: white;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #171717;
+  text-align: center;
+}
+
+.bannerButon:hover {
+  color: #000;
+  background-color: whitesmoke;
+  transition: all 0.5;
+}
+
+.slick-slide div {
+  outline: none;
+}
+
+.bannerFade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 7.5rem;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+}
+
+@media (max-width: 768px) {
+  .bannerContent {
+    bottom: 10px;
+    left: 10px;
+  }
+  .bannerImg {
+    object-position: center;
+    max-width: 50%;
+    max-height: 100%;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+  }
+
+  .bannerDescription {
+    margin-top: 10px;
+    margin-left: 45px;
+    font-size: 0.9rem;
+  }
+
+  .bannerButton {
+    font-size: 0.8rem;
+  }
+}

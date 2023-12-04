@@ -1,0 +1,115 @@
+.container {
+  position: relative;
+}
+
+.backgroundImg {
+  object-fit: cover;
+  object-position: left top;
+  width: 100%;
+  height: 600px;
+}
+.containerPoster {
+  background: transparent;
+  display: flex;
+  margin-left: 30px;
+}
+.posterImg {
+  position: relative;
+  bottom: 60px;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+.tituloPoster {
+  background: transparent;
+  padding-top: 10px;
+  margin-left: 30px;
+}
+
+.descriptionPoster {
+  background: transparent;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.userScore {
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.containerGenres {
+  display: flex;
+}
+
+.genres {
+  color: red;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.containerTrailer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trailerTitulo {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.trailer {
+  width: 480px;
+  height: 350px;
+}
+
+.raiting {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .backgroundImg {
+    object-position: center;
+  }
+  .containerPoster {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .letra {
+    background: transparent;
+  }
+  .tituloPoster {
+    position: relative;
+    bottom: 40px;
+    background: transparent;
+    text-align: center;
+    padding: 5px;
+    margin-left: 0;
+  }
+
+  .descriptionPoster {
+    position: relative;
+    bottom: 40px;
+    background: transparent;
+    text-align: center;
+    padding: 10px;
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  .genres {
+    position: relative;
+    bottom: 40px;
+  }
+  .userScore {
+    position: relative;
+    bottom: 40px;
+  }
+
+  .trailer {
+    width: 300px;
+    height: 200px;
+  }
+}

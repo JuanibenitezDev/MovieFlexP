@@ -1,0 +1,50 @@
+.row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.rowImg {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 10px;
+}
+
+.rowImg::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  object-fit: contain;
+  max-height: 200px;
+  margin: 5px;
+  transition: transform 300ms;
+}
+
+.card:hover {
+  transform: scale(1.09);
+}
+
+.title {
+  margin-left: 4%;
+}
+
+.buttonsRight {
+  z-index: 30;
+  position: relative;
+  right: 40px;
+  font-size: 45px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.buttonsLeft {
+  z-index: 30;
+  position: relative;
+  left: 40px;
+  background: transparent;
+  font-size: 45px;
+  cursor: pointer;
+}
